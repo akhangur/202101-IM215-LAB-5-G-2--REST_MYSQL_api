@@ -10,7 +10,7 @@ const pool = mysql.createPool({
   port: 3306,
   user: 'root',
   password: 'password',
-  database: '202101-IM215-REST',
+  database: '202101-im215-rest',
 });
 
 function getNewConnection() {
@@ -77,7 +77,8 @@ router.delete('/user/:id', (request, response) => {
       console.error(err)
       response.sendStatus(500);
     } else {
-      // As exercise check if user was actually removed. 
+      // As exercise check if user was actually removed.
+       
       console.log(result)
       response.end()
     }

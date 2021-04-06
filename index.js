@@ -15,6 +15,9 @@ app.use(router_user)
 // app.get('/', (request, response) => {
 //   response.send('Welcome')
 // })
+// app.post('/addUserFormSubmit',(req,res)=>{
+//      console.log(req.body);
+//    })
 
 app.listen(3333, () => {
   console.log('The server is up and listening on port 3333')

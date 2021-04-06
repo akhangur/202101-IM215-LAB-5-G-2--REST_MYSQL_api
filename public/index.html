@@ -13,11 +13,11 @@
   <h1>Create User</h1>
   <form class='createUser' onsubmit='createUser(event)'>
     <label for='firstName'>First Name</label>
-    <input id='firstName' type="text">
+    <input id='firstName' name='firstname' type="text">
     <label for='lastName'>Last Name</label>
-    <input id='lastName' type="text">
+    <input id='lastName' name="lastName" type="text">
     <label for='age'>Age</label>
-    <input id='age' type="number">
+    <input id='age' name="age" type="number">
     <input type="submit">
   </form>
 
@@ -38,7 +38,7 @@
   <hr>
 
   <h1>Listing Users</h1>
-  <table>
+  <table id='mytable'>
     <thead>
       <th>First Name</th>
       <th>Last Name</th>
@@ -70,7 +70,12 @@
   <hr>
 
   <h1>Delete User</h1>
-  <p>For you to practice at home</p>
+  <form class="DeleteUser" onsubmit="DeleteUser(event)">
+    <label for='userId3'>User Id</label>
+    <input id='userId3' type='number' title='id'>
+    <input type="submit"><br><br>
+
+  </form>
 
   <hr>
 
